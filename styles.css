@@ -16,24 +16,18 @@ body {
     margin-right: 50px;
     font-size: 16px;
     font-family: 'Rubik', sans-serif;
-    position: relative;
-    
+    height:inherit
 }
 
 .comment1, .comment2 {
     margin-left: 550px;
+    
+
 }
 
 .comment3, .comment4 {
     margin-left: 650px;
    
-}
-
-
-.img4 {
-    display: inline-block;
-    margin: 15px 10px;
-
 }
 
 .sendBtn {
@@ -47,6 +41,7 @@ body {
     margin-left: 10px;
     vertical-align: top;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .inlineBlock {
@@ -61,18 +56,126 @@ body {
     font-size: 16px;
     display: inline-block;
     white-space: nowrap;
-    /* align-items: center; */
 }
 
 .messageContentInput {
-    width: 475px;
-    height: 100px;
+    width: 415px;
+    height: 60px;
     color:  hsl(211, 10%, 45%);
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
     margin-bottom: 10px;
     border-radius: 25px;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 25px;
     padding: 20px;
     padding-right: 20px;
     border: 1px solid lightgray;
+}
+
+
+.likes, .image, .username, .date, .you {
+    display: inline-block;
+    vertical-align: top;
+   
+   
+}
+
+.username, .date, .you {
+    padding-right: 5px;
+}
+
+.likes {
+   color: hsl(238, 40%, 52%);
+}
+
+/* tried making plus and minus buttons for likes, could not figure 
+it out */
+
+/* .wrapper {
+    border: 2px #dcd3d3 solid;
+    width: 75px;
+    height: 20px;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+  }
+
+  .num {
+    height: 100%;
+    width: 30%;
+    border: none;
+    font-size: 16px;
+  }
+
+  .plusminus {
+    height: 100%;
+    width: 30%;
+    background: white;
+    border: none;
+    font-size: 16px;
+    color: #5f5fce;
+  } */
+
+
+.username {
+    color:black;
+    font-weight:500
+}
+
+.date {
+    color: gray;
+    padding-left: 5px;
+}
+
+.fa {
+    color: hsl(238, 40%, 52%);
+    /* padding-left: 100px; */
+    /* font-family: 'Rubik', sans-serif;
+    font-weight: bolder; */
+    /* margin-left: 220px; */
+   align-items: end;
+   cursor: pointer;
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+
+.reply {
+    font-family:'Rubik', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete, .edit {
+    font-family:'Rubik', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+
+.image {
+    transform: scale(.5);
+    position: relative;
+    top: -20px;
+}
+
+.comment {
+    /* margin-bottom: 30px; */
+    margin-top: -20px;
+    line-height: 25px;
+}
+
+.you {
+    background-color:hsl(238, 40%, 52%);
+    color: lightgray;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+
+.imgComment {
+    transform: scale(.75);
+    vertical-align:top
 }
